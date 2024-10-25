@@ -14,16 +14,21 @@ struct UpdatesTabScreen: View {
     var body: some View {
         NavigationStack {
             List {
-                StatusSectionHeader()
-                    .listRowBackground(Color(.clear))
-                
-                StatusSection()
+                Section {
+                    StatusSection()
+                    
+                    
+                } header: {
+                        StatusSectionHeader()
+                            .padding(.bottom, 10)
+                }
                 
                 Section {
                     RecentUpdatesSection()
                 } header: {
                     Text("Recent Updates")
-                        .font(.callout)
+                        .font(.callout).bold()
+//                        .foregroundColor(.whatsAppBlack)
                 }
                 
                 Section {
@@ -33,7 +38,6 @@ struct UpdatesTabScreen: View {
                 }
 
             }
-            .listStyle(.grouped)
             .navigationTitle("Updates")
             .searchable(text: $searchText)
             
@@ -52,9 +56,12 @@ private struct StatusSectionHeader: View {
         VStack {
 
             Text("Status")
-                .font(.title3).bold()
-                .padding(5)
+//                .font(.title3).bold()
+//                .padding(5)
                 .frame(maxWidth: .infinity, alignment: .leading)
+//                .foregroundColor(.whatsAppBlack)
+//                .textCase(.none)
+                .font(.callout).bold()
             
             HStack(alignment: .top) {
                 Image(systemName: "circle.dashed")
@@ -222,10 +229,11 @@ private struct ChannelSectionHeader: View {
     var body: some View {
         HStack {
             Text("Channels")
-                .font(.title3)
-                .bold()
-                .foregroundColor(.whatsAppBlack)
-                .textCase(.none)
+//                .font(.title3)
+//                .bold()
+//                .foregroundColor(.whatsAppBlack)
+//                .textCase(.none)
+                .font(.callout).bold()
             
             Spacer()
             

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FAB2D2832CC7F94E002C6DB4 /* UpdatesTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2D2822CC7F94E002C6DB4 /* UpdatesTabScreen.swift */; };
+		FAB2D2852CC960E8002C6DB4 /* CallsTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2D2842CC960E8002C6DB4 /* CallsTabScreen.swift */; };
+		FAB2D2912CCB8E5C002C6DB4 /* CommunityTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2D2902CCB8E5C002C6DB4 /* CommunityTabScreen.swift */; };
 		FACEF58F2CC646FA00E60D36 /* TalkTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACEF58E2CC646FA00E60D36 /* TalkTalkApp.swift */; };
 		FACEF5912CC646FA00E60D36 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACEF5902CC646FA00E60D36 /* MainTabView.swift */; };
 		FACEF5932CC646FB00E60D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACEF5922CC646FB00E60D36 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		FAB2D2822CC7F94E002C6DB4 /* UpdatesTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTabScreen.swift; sourceTree = "<group>"; };
+		FAB2D2842CC960E8002C6DB4 /* CallsTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTabScreen.swift; sourceTree = "<group>"; };
+		FAB2D2902CCB8E5C002C6DB4 /* CommunityTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTabScreen.swift; sourceTree = "<group>"; };
 		FACEF58B2CC646FA00E60D36 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACEF58E2CC646FA00E60D36 /* TalkTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTalkApp.swift; sourceTree = "<group>"; };
 		FACEF5902CC646FA00E60D36 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -34,6 +38,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAB2D2862CCB8D71002C6DB4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D28D2CCB8DF1002C6DB4 /* Settings */,
+				FAB2D28C2CCB8DE9002C6DB4 /* Chats */,
+				FAB2D28B2CCB8DDF002C6DB4 /* Communities */,
+				FAB2D2892CCB8D97002C6DB4 /* Calls */,
+				FAB2D2872CCB8D84002C6DB4 /* Updates */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		FAB2D2872CCB8D84002C6DB4 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D2882CCB8D8E002C6DB4 /* Views */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		FAB2D2882CCB8D8E002C6DB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D2822CC7F94E002C6DB4 /* UpdatesTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAB2D2892CCB8D97002C6DB4 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D28A2CCB8DB3002C6DB4 /* Views */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		FAB2D28A2CCB8DB3002C6DB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D2842CC960E8002C6DB4 /* CallsTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAB2D28B2CCB8DDF002C6DB4 /* Communities */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D28E2CCB8DFE002C6DB4 /* Views */,
+			);
+			path = Communities;
+			sourceTree = "<group>";
+		};
+		FAB2D28C2CCB8DE9002C6DB4 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		FAB2D28D2CCB8DF1002C6DB4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FAB2D28E2CCB8DFE002C6DB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2D2902CCB8E5C002C6DB4 /* CommunityTabScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FACEF5822CC646FA00E60D36 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +131,7 @@
 		FACEF58D2CC646FA00E60D36 /* TalkTalk */ = {
 			isa = PBXGroup;
 			children = (
-				FAB2D2822CC7F94E002C6DB4 /* UpdatesTabScreen.swift */,
+				FAB2D2862CCB8D71002C6DB4 /* Screen */,
 				FACEF58E2CC646FA00E60D36 /* TalkTalkApp.swift */,
 				FACEF5902CC646FA00E60D36 /* MainTabView.swift */,
 				FACEF5922CC646FB00E60D36 /* Assets.xcassets */,
@@ -141,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACEF5912CC646FA00E60D36 /* MainTabView.swift in Sources */,
+				FAB2D2852CC960E8002C6DB4 /* CallsTabScreen.swift in Sources */,
+				FAB2D2912CCB8E5C002C6DB4 /* CommunityTabScreen.swift in Sources */,
 				FACEF58F2CC646FA00E60D36 /* TalkTalkApp.swift in Sources */,
 				FAB2D2832CC7F94E002C6DB4 /* UpdatesTabScreen.swift in Sources */,
 			);

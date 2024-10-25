@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    
+    init() {
+        makeTabBarOpaque()
+    }
+    
+    
     var body: some View {
         TabView {
             
@@ -17,14 +24,13 @@ struct MainTabView: View {
                 }
                 .tag(Tab.updates.title)
             
-            Text("Calls")
+            CallsTabScreen()
                 .tabItem {
                     Label("Calls", systemImage: Tab.calls.icon)
                 }
                 .tag(Tab.calls.title)
             
-            Text("Communities")
-            
+            CommunityTabScreen()
                 .tabItem {
                     Label("Communities", systemImage: Tab.communities.icon)
                 }
@@ -70,6 +76,13 @@ extension MainTabView {
             }
         }
         
+    }
+    
+    private func makeTabBarOpaque() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
     }
     
 }
